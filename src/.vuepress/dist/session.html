@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Session | ChainBow Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="docs for chainbow">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.76a0677b.css" as="style"><link rel="preload" href="/assets/js/app.4efac56c.js" as="script"><link rel="preload" href="/assets/js/2.108e971b.js" as="script"><link rel="preload" href="/assets/js/12.ce7fbac2.js" as="script"><link rel="prefetch" href="/assets/js/10.a0ad2d09.js"><link rel="prefetch" href="/assets/js/11.f80ecf7b.js"><link rel="prefetch" href="/assets/js/3.2def807a.js"><link rel="prefetch" href="/assets/js/4.2cdb844e.js"><link rel="prefetch" href="/assets/js/5.21a68a7b.js"><link rel="prefetch" href="/assets/js/6.0377ba0c.js"><link rel="prefetch" href="/assets/js/7.6bfcf9f2.js"><link rel="prefetch" href="/assets/js/8.c7d90aef.js"><link rel="prefetch" href="/assets/js/9.27ac6ee2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.76a0677b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ChainBow Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://chainbow.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ChainBow
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://chainbow.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ChainBow
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/" aria-current="page" class="sidebar-link">ChainBow Documentation</a></li><li><a href="/session.html" aria-current="page" class="active sidebar-link">Session</a></li><li><a href="/methods.html" class="sidebar-link">Method</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="session"><a href="#session" class="header-anchor">#</a> Session</h1> <p>Before you do any operation that dapp request to chainbow, you will need to set up the session.</p> <p>Define app meta data like below</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">AppMetadata</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    description<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    url<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    icons<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">&lt;</span>AppMetadata<span class="token operator">&gt;</span><span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'ddz'</span><span class="token punctuation">,</span>
+    description<span class="token operator">:</span> <span class="token string">'chainbow ddz'</span><span class="token punctuation">,</span>
+    url<span class="token operator">:</span> <span class="token string">'http://chainbow.io'</span><span class="token punctuation">,</span>
+    icons<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'http://image.5you.com/attachment/soft/2020/1021/100148_22591334.png'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>Trigger the session connect proposal like below</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">const</span> session <span class="token operator">=</span> <span class="token keyword">await</span> data<span class="token punctuation">.</span>client<span class="token operator">!</span><span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  metadata<span class="token operator">:</span> metadata<span class="token punctuation">,</span>
+  pairing<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  permissions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    blockchain<span class="token operator">:</span> <span class="token punctuation">{</span>
+      chains<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'bsv:livenet'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    jsonrpc<span class="token operator">:</span> <span class="token punctuation">{</span>
+      methods<span class="token operator">:</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span><span class="token constant">DEFAULT_METHODS</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Trigger the session disconnect proposal like below</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>session<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> data<span class="token punctuation">.</span>client<span class="token operator">?.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    topic<span class="token operator">:</span> data<span class="token punctuation">.</span>session<span class="token punctuation">.</span>topic<span class="token punctuation">,</span>
+    reason<span class="token operator">:</span> <span class="token constant">ERROR</span><span class="token punctuation">.</span><span class="token constant">USER_DISCONNECTED</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+data<span class="token punctuation">.</span>session <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+data<span class="token punctuation">.</span>accounts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">
+        ChainBow Documentation
+      </a></span> <span class="next"><a href="/methods.html">
+        Method
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.4efac56c.js" defer></script><script src="/assets/js/2.108e971b.js" defer></script><script src="/assets/js/12.ce7fbac2.js" defer></script>
+  </body>
+</html>

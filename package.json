@@ -1,0 +1,19 @@
+{
+  "name": "chainbowdocs",
+  "version": "0.0.1",
+  "description": "docs for chainbow",
+  "main": "index.js",
+  "authors": {
+    "name": "chainbow",
+    "email": "suhao@chainbow.io"
+  },
+  "repository": "/chainbowdocs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
